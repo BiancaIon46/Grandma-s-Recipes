@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Cherry Pineapple Bologna</title>
+    <style>
+
+      body {
+        font-family:'Times New Roman';
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+        font-size: 1.5em;
+        color: #000000;
+        background-color: transparent;
+      }
+
+      /* Container needed to position the overlay. Adjust the width as needed */
+      .container {
+        position: relative;
+        width: 100%;
+      }
+
+      /* Make the image to responsive */
+      .image1 {
+        width: 50%;
+        height: auto;
+      }
+
+      /* The overlay effect (full height and width) - lays on top of the container and over the image */
+      .overlay {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background-color: #008CBA;
+        overflow: hidden;
+        width: 100%;
+        height: 100%;
+        transform: scale(0);
+        transition: .3s ease;
+      }
+
+      /* When you mouse over the container, the overlay text will "zoom" in display */
+      .container:hover .overlay {
+        transform: scale(1);
+      }
+
+      /* Some text inside the overlay, which is positioned in the middle vertically and horizontally */
+      .text {
+        color: white;
+        font-size: 100px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+      }
+
+
+      * {
+        box-sizing: border-box;
+      }
+
+      img {
+        vertical-align: middle;
+      }
+
+      /* Position the image container (needed to position the left and right arrows) */
+      .container {
+        position: relative;
+      }
+
+      /* Hide the images by default */
+      .mySlides {
+        display: none;
+      }
+
+      /* Add a pointer when hovering over the thumbnail images */
+      .cursor {
+        cursor: pointer;
+      }
+
+      /* Next & previous buttons */
+      .prev,
+      .next {
+        cursor: pointer;
+        position: absolute;
+        top: 40%;
+        width: auto;
+        padding: 16px;
+        margin-top: -50px;
+        color: white;
+        font-weight: bold;
+        font-size: 20px;
+        border-radius: 0 3px 3px 0;
+        user-select: none;
+        -webkit-user-select: none;
+      }
+
+      /* Position the "next button" to the right */
+      .next {
+        right: 0;
+        border-radius: 3px 0 0 3px;
+      }
+
+      /* On hover, add a black background color with a little bit see-through */
+      .prev:hover,
+      .next:hover {
+        background-color: rgba(0, 0, 0, 0.8);
+      }
+
+      /* Number text (1/3 etc) */
+      .numbertext {
+        color: #f4f4f4;
+        font-size: 12px;
+        padding: 8px 12px;
+        position: absolute;
+        top: 0;
+      }
+
+      /* Container for image text */
+      .caption-container {
+        text-align: center;
+        background-color: #222;
+        padding: 2px 16px;
+        color: white;
+      }
+
+      .row:after {
+        content: "";
+        display: table;
+        clear: both;
+      }
+
+      /* Six columns side by side */
+      .column {
+        float: left;
+        width: 16.66%;
+      }
+
+      /* Add a transparency effect for thumnbail images */
+      .demo {
+        opacity: 0.6;
+      }
+
+      .active,
+      .demo:hover {
+        opacity: 1;
+      }
+
+    </style>
+  </head>
+    </style>
+  </head>
+  <body background="E:\Bianca\acs\an2\TW\proiect1\images\brown-texture_1253-189.jpg">
+    <button onclick="document.location='index.html'">Back To Table of Content</button>
+    <h1>Cherry Pineapple Bologna</h1>
+    <div class="container">
+    <img
+      src="images\sweet-homemade-pineapple-upside-down-cake_696537-3089.jpg"
+      alt="Avatar1"
+      class="image1"
+      style="width: 550px; height: 500px"
+    />
+    <div class="overlay">
+      <div class="text">Bone appetit!</div>
+    </div>
+    </div>
+    <h2>Ingredients</h2>
+    <ul>
+        <li><em>1/2</em> cup crushed pineapple</li>
+        <li><em>1/4</em> cup coarsely chopped maraschino cherries</li>
+        <li><em>1/4</em> cup light corn syrup</li>
+        <li><em>2 tabelpoons</em> white vinegar</li>
+        <li><em>1/4 teaspoon</em> cloves</li>
+        <li><em>2 drops</em> red food color</li>
+        <li><em>11/2 teeaspoons</em> water</li>
+        <li><em>1/2 teeaspoons</em> cornstarch</li>
+    </ul>
+    <h2>Preparation</h2>
+    <ol>
+        <li>If necessary remove casing from <b>bologna</b>; 
+            <br>arrange <b>bologna</b> in ungreased 9-inch pie pan.
+            <br>Cut ring diagonally at 2-inch intervals, being careful not to cut completely through. 
+            <br>Separate cuts and spoon in part of <b>glaze</b>. 
+            <br>Spread remaining <b>glaze</b> on top.</li>
+        <li>Heat oven to 400°. 
+            <br>Prepare <b>Potato Buds</b> instant puffs as directed on package. 
+            <br>Mound <b>potatoes</b> in center of ring. 
+            <br>Bake 20 minutes or until <b>potatoes</b> are light brown.</li>
+        <li>Heat <b>pineapple</b>, <b>cherries</b>, <b>corn syrup</b>, <b>vinegar</b>, <b>cloves</b> and <b>food color</b> to boiling, stirring occasionally. 
+            <br>Reduce heat; simmer 15 minutes. 
+            <br>Blend <b>water</b> and <b>cornstarch</b>; stir into <b>fruit</b>. 
+            <br>Cook, stirring constantly, until mixture thickens and boils. 
+            <br>Boil and stir 1 minute.</li>
+    </ol>
+
+
+    <div class="container">
+      <div class="mySlides">
+        <div class="numbertext">1 / 6</div>
+        <img src="images\spring-flowers.jpg" style="width:100%">
+      </div>
+    
+      <div class="mySlides">
+        <div class="numbertext">2 / 6</div>
+        <img src="images\cherry-drops-water-close-up-arrangement-berries.jpg" style="width:100%">
+      </div>
+    
+      <div class="mySlides">
+        <div class="numbertext">3 / 6</div>
+        <img src="images\top-view-female-hand-holding-pineapple.jpg" style="width:100%">
+      </div>
+        
+      <div class="mySlides">
+        <div class="numbertext">4 / 6</div>
+        <img src="images\pineapple-juice.jpg" style="width:100%">
+      </div>
+    
+      <div class="mySlides">
+        <div class="numbertext">5 / 6</div>
+        <img src="images\close-up-baking.jpg" style="width:100%">
+      </div>
+        
+      <div class="mySlides">
+        <div class="numbertext">6 / 6</div>
+        <img src="images\delicious-ie-black.jpg" style="width:100%">
+      </div>
+        
+      <a class="prev" onclick="plusSlides(-1)">❮</a>
+      <a class="next" onclick="plusSlides(1)">❯</a>
+    
+      <div class="caption-container">
+        <p id="caption"></p>
+      </div>
+    
+      <div class="row">
+        <div class="column">
+          <img class="demo cursor" src="images\spring-flowers.jpg" style="width:100%" onclick="currentSlide(1)" alt="The beginning">
+        </div>
+        <div class="column">
+          <img class="demo cursor" src="images\cherry-drops-water-close-up-arrangement-berries.jpg" style="width:100%" onclick="currentSlide(2)" alt="Cherries">
+        </div>
+        <div class="column">
+          <img class="demo cursor" src="images\top-view-female-hand-holding-pineapple.jpg" style="width:100%" onclick="currentSlide(3)" alt="Pineapple">
+        </div>
+        <div class="column">
+          <img class="demo cursor" src="images\pineapple-juice.jpg" style="width:100%" onclick="currentSlide(4)" alt="Pineapple juice">
+        </div>
+        <div class="column">
+          <img class="demo cursor" src="images\close-up-baking.jpg" style="width:100%" onclick="currentSlide(5)" alt="Baking process">
+        </div>    
+        <div class="column">
+          <img class="demo cursor" src="images\delicious-ie-black.jpg" style="width:50%" onclick="currentSlide(6)" alt="Dessert">
+        </div>
+      </div>
+    </div>
+
+    <script src="scripts\SlideShow.js">
+      /*let slideIndex = 1;
+      showSlides(slideIndex);
+      
+      function plusSlides(n) {
+        showSlides(slideIndex += n);
+      }
+      
+      function currentSlide(n) {
+        showSlides(slideIndex = n);
+      }
+      
+      function showSlides(n) {
+        let i;
+        let slides = document.getElementsByClassName("mySlides");
+        let dots = document.getElementsByClassName("demo");
+        let captionText = document.getElementById("caption");
+        if (n > slides.length) {slideIndex = 1}
+        if (n < 1) {slideIndex = slides.length}
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex-1].style.display = "block";
+        dots[slideIndex-1].className += " active";
+        captionText.innerHTML = dots[slideIndex-1].alt;
+      }*/
+      </script>
+  </body>
+</html>

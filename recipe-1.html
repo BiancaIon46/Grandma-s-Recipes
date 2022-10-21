@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Perfection Salad</title>
+    <style>
+      body {
+        font-family: "sans-serif";
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+        font-size: 1.5em;
+        color: #000000;
+        background-color:lightgrey;
+      }
+
+      .column {
+        float: left;
+        width: 50%;
+      }
+
+      .row{
+        display: flex;
+      }
+
+      /* Container needed to position the overlay. Adjust the width as needed */
+      .container {
+        position: relative;
+        width: 50%;
+      }
+
+      /* Make the image to responsive */
+      .image {
+        width: 100%;
+        height: auto;
+      }
+
+      /* The overlay effect (full height and width) - lays on top of the container and over the image */
+      .overlay {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background-color: #008cba;
+        overflow: hidden;
+        width: 200%;
+        height: 100%;
+        transform: scale(0);
+        transition: 0.3s ease;
+      }
+
+      /* When you mouse over the container, the overlay text will "zoom" in display */
+      .container:hover .overlay {
+        transform: scale(1);
+      }
+
+      /* Some text inside the overlay, which is positioned in the middle vertically and horizontally */
+      .text {
+        color: white;
+        font-size: 100px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+      }
+    </style>
+  </head>
+
+  <body>
+    <button onclick="document.location='index.html'">
+      Back To Table of Content
+    </button>
+
+    <div class="w3-content" style="max-width: 1100px"></div>
+    <h1>Perfection Salad</h1>
+    <div class="row">
+      <div class="column">
+        <div class="container">
+          <img
+            src="images\greek-salad-with-fresh-tomato-cucumber-red-onion-basil-feta-cheese-black-olives-italian-herbs.jpg"
+            alt="Avatar"
+            class="image"
+            style="width: 700px; height: 500px"
+          />
+
+          <div class="overlay">
+            <div class="text">Bon Appétit!</div>
+          </div>
+        </div>
+      </div>
+      <div class="column">
+        <div class="container">
+          <img
+            src="images\healthy-food-greek-salad-with-fresh-vegetables_2829-3591.jpg"
+            alt="Avatar"
+            class="image"
+            style="width: 800px; height: 500px"
+          />
+
+          <div class="overlay">
+            <div class="text">Enjoy your meal!</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="column">
+      <div class="w3-column w3-padding-10 w3-right" id="Ingredients">
+        <div class="w3-col w3-padding-large">
+          <h2 class="w3-left">Ingredients</h2>
+          <br />
+          <ul>
+            <li><em>2</em> envelopes unflavored gelatine</li>
+            <li><em>2</em> envelopes unflavored gelatine</li>
+            <li><em>1/2</em> cup sugar</li>
+            <li><em>1 teaspoon</em> salt</li>
+            <li><em>1 can (12 oz)</em> apple juice</li>
+            <li><em>1/2 cup</em> lemon juice</li>
+            <li><em>2 tablespoons</em> vinegar</li>
+            <li><em>1 cup</em> shredded carrot</li>
+            <li><em>1 cup</em> sliced celery</li>
+            <li><em>1 cup</em> finely shredded cabbage</li>
+            <li><em>1/2 cup</em> chopped green pepper</li>
+            <li><em>1 can (4 oz)</em> chopped pimiento</li>
+          </ul>
+          <iframe src="https://giphy.com/embed/ZZru6PD1yINvvcdaEh" width="480" height="480" frameBorder="0" class="giphy-embed"></iframe></p>
+        </div>
+      </div>
+    </div>
+    <!--
+    <h2>Ingredients</h2>
+    <ul>
+      <li><em>2</em> envelopes unflavored gelatine</li>
+      <li><em>2</em> envelopes unflavored gelatine</li>
+      <li><em>1/2</em> cup sugar</li>
+      <li><em>1 teaspoon</em> salt</li>
+      <li><em>1 can (12 oz)</em> apple juice</li>
+      <li><em>1/2 cup</em> lemon juice</li>
+      <li><em>2 tablespoons</em> vinegar</li>
+      <li><em>1 cup</em> shredded carrot</li>
+      <li><em>1 cup</em> sliced celery</li>
+      <li><em>1 cup</em> finely shredded cabbage</li>
+      <li><em>1/2 cup</em> chopped green pepper</li>
+      <li><em>1 can (4 oz)</em> chopped pimiento</li>
+    </ul> -->
+    <div class="column">
+      <div class="w3-column w3-padding-10 w3-right" id="Preparation">
+        <h2 class="w3-left">Preparation</h2>
+        <br />
+        <!--<h2>Preparation</h2> -->
+        <ol>
+          <li>
+            In small saucepan, combine <b>gelatine</b>, <b>sugar</b>, and
+            <b>salt</b>; <br />mix well.
+          </li>
+          <li>
+            Add 1 cup <b>water</b>. <br />Heat over low heat, stirring
+            constantly, until <b>sugar</b> and <b>gelatine</b>> are dissolved.
+            <br />Remove from heat.
+          </li>
+          <li>
+            Stir in <b>apple juice</b>, <b>lemon juice</b>, <b>vinegar</b>, and
+            1/4 cup <b>cold water</b>. <br />Pour into medium bowl.
+            <br />Refrigerate 1 hour, or until mixture is consistency of
+            unbeaten egg white.
+          </li>
+          <li>
+            Add <b>carrot</b>, <b>celery</b>, <b>cabbage</b>,
+            <b>green pepper</b>, and <b>pimiento</b>; <br />stir until well
+            combined.
+          </li>
+          <li>
+            Turn into decorative, 1 1/2-quart mold. <br />Refrigerate 4 hours,or
+            until firm.
+          </li>
+          <li>
+            To unmold: <br />Run small spatula around edge of mold; <br />invert
+            onto serving plate. <br />Place hot dishcloth over mold; shake
+            gently to release. <br />Repeat, if necessary. <br />Lift off mold.
+            refrigerate until ready to serve.
+          </li>
+        </ol>
+        <iframe src="https://giphy.com/embed/drMmzNqb7pMOPkwXd1" width="480" height="456" frameBorder="0" class="giphy-embed"></iframe></p>
+      </div>
+    </div>
+
+  </body>
+</html>
