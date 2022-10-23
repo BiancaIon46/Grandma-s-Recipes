@@ -2,77 +2,25 @@
 <html lang="en">
   <head>
     <title>Perfection Salad</title>
-    <style>
-      body {
-        font-family: "sans-serif";
-        background-repeat: no-repeat;
-        background-attachment: fixed;
-        background-size: cover;
-        font-size: 1.5em;
-        color: #000000;
-        background-color:lightgrey;
-      }
-
-      .column {
-        float: left;
-        width: 50%;
-      }
-
-      .row{
-        display: flex;
-      }
-
-      /* Container needed to position the overlay. Adjust the width as needed */
-      .container {
-        position: relative;
-        width: 50%;
-      }
-
-      /* Make the image to responsive */
-      .image {
-        width: 100%;
-        height: auto;
-      }
-
-      /* The overlay effect (full height and width) - lays on top of the container and over the image */
-      .overlay {
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        right: 0;
-        background-color: #008cba;
-        overflow: hidden;
-        width: 200%;
-        height: 100%;
-        transform: scale(0);
-        transition: 0.3s ease;
-      }
-
-      /* When you mouse over the container, the overlay text will "zoom" in display */
-      .container:hover .overlay {
-        transform: scale(1);
-      }
-
-      /* Some text inside the overlay, which is positioned in the middle vertically and horizontally */
-      .text {
-        color: white;
-        font-size: 100px;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        text-align: center;
-      }
-    </style>
+    <link rel="stylesheet" href="styles\recipe1.css">
+    <style src="styles\recipe1.css"></style>
   </head>
 
   <body>
-    <button onclick="document.location='index.html'">
-      Back To Table of Content
-    </button>
+    <button onclick="document.location='index.html'">Back to Table of Content</button>
 
     <div class="w3-content" style="max-width: 1100px"></div>
-    <h1>Perfection Salad</h1>
+    <table>
+    <tr>
+      <td>
+        <img src="images\2.png" width="100" height="100" float: left margin-left:10px/>
+      </td>
+      <td>
+        <h1>Perfection Salad</h1>
+      </td>
+    </tr>
+  </table>
+
     <div class="row">
       <div class="column">
         <div class="container">
@@ -94,7 +42,7 @@
             src="images\healthy-food-greek-salad-with-fresh-vegetables_2829-3591.jpg"
             alt="Avatar"
             class="image"
-            style="width: 800px; height: 500px"
+            style="width: 750px; height: 500px"
           />
 
           <div class="overlay">
@@ -107,8 +55,18 @@
     <div class="column">
       <div class="w3-column w3-padding-10 w3-right" id="Ingredients">
         <div class="w3-col w3-padding-large">
-          <h2 class="w3-left">Ingredients</h2>
-          <br />
+          
+          <table>
+            <tr>
+              <td>
+                <img src="images\2.png" width="100" height="100" float: left margin-left:10px/>
+              </td>
+              <td>
+                <h2 class="w3-left">Ingredients</h2>
+              </td>
+            </tr>
+          </table>
+
           <ul>
             <li><em>2</em> envelopes unflavored gelatine</li>
             <li><em>2</em> envelopes unflavored gelatine</li>
@@ -127,27 +85,21 @@
         </div>
       </div>
     </div>
-    <!--
-    <h2>Ingredients</h2>
-    <ul>
-      <li><em>2</em> envelopes unflavored gelatine</li>
-      <li><em>2</em> envelopes unflavored gelatine</li>
-      <li><em>1/2</em> cup sugar</li>
-      <li><em>1 teaspoon</em> salt</li>
-      <li><em>1 can (12 oz)</em> apple juice</li>
-      <li><em>1/2 cup</em> lemon juice</li>
-      <li><em>2 tablespoons</em> vinegar</li>
-      <li><em>1 cup</em> shredded carrot</li>
-      <li><em>1 cup</em> sliced celery</li>
-      <li><em>1 cup</em> finely shredded cabbage</li>
-      <li><em>1/2 cup</em> chopped green pepper</li>
-      <li><em>1 can (4 oz)</em> chopped pimiento</li>
-    </ul> -->
+
     <div class="column">
       <div class="w3-column w3-padding-10 w3-right" id="Preparation">
-        <h2 class="w3-left">Preparation</h2>
-        <br />
-        <!--<h2>Preparation</h2> -->
+        
+        <table>
+          <tr>
+            <td>
+              <img src="images\2.png" width="100" height="100" float: left margin-left:10px/>
+            </td>
+            <td>
+              <h2 class="w3-left">Preparation</h2>
+            </td>
+          </tr>
+        </table>
+        
         <ol>
           <li>
             In small saucepan, combine <b>gelatine</b>, <b>sugar</b>, and

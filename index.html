@@ -7,109 +7,8 @@
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Karma">
     <link rel="stylesheet" href="styles\text-index.css">
- <!--   <style>
-        h1, h2, h3, h4, h5, h6{
-            font-family: 'sans-serif';
-            letter-spacing: 1px;
-          }
-
-        html {
-          font-family: sans-serif;
-        }
-        
-        .column{
-          float: left;
-          width: 50%;
-        }
-
-        table {
-          border-collapse: collapse;
-          border: 43x solid rgb(200,200,200);
-          letter-spacing: 1px;
-          font-size: 1.5rem;
-        }
-        
-        tbody {
-            font-size: 95%;
-            font-family:'sans-serif';
-            align-self: center;
-        }
-
-        td, th {
-          border: 0px solid rgb(190,190,190);
-          padding: 10px 20px;
-          text-align-last: left;
-        }
-    
-        td {
-          text-align: left;
-        }
-    
-        caption {
-          padding: 2px;
-          text-align: left;
-        }
-        p {
-          line-height: 1.4;
-        }
-
-        a {
-          outline: none;
-          text-decoration: none;
-          padding: 2px 1px 0;
-        }
-
-        a:link {
-          color: #061ab9;
-        }
-
-        a:visited {
-          color: #270e67;
-        }
-
-        a:focus {
-          border-bottom: 1px solid;
-          background:lightgrey;
-        }
-
-        a:hover {
-          border-bottom: 1px solid;
-          background: lightgrey;
-        }
-
-        a:active {
-          background:lightgrey;
-          color: lightgrey;
-        }
-
-        body {
-        background-repeat: no-repeat;
-        background-attachment: fixed;
-        background-size: cover;
-        font-family:'Times New Roman', Georgia, serif;
-        font-size: 50px;
-        color: #000000;
-        background-color: transparent;
-        background-color:lightgray;
-        
-        }
-
-        .w3-bar-block .w3-bar-item {
-          padding:20px
-        }
-
-        li{
-          text-align:left;
-        }
-
-        p{
-          font-size: small;
-        }
-
-        
-
-    </style> -->
   </head>
+
   <body>
     <!-- Sidebar hidden by default -->
     <nav class="w3-sidebar w3-bar-block w3-card w3-top w3-xlarge w3-animate-left" style="display:none;z-index:2;width:100%;min-width:100px" id="mySidebar">
@@ -125,11 +24,12 @@
     <div class="w3-top">
       <div class="w3-white w3-xlarge" style="max-width:2000px;margin:auto">
         <div class="w3-button w3-padding-16 w3-left" onclick="w3_open()">☰</div>
-        <div class="w3-right w3-padding-16"><a href="login.yahoo.com">Mail</a></div>
+        <div class="w3-right w3-padding-16"><a href="#login.yahoo.com">Mail</a></div>
         <div class="w3-center w3-padding-16">My Food</div>
       </div>
     </div>
   
+    <br><img src="images\2.png" style="width:5%; height:5%;"/>
     <br><p><h1 style="color:rgb(4, 7, 8); text-align: center;">Recipes</h1></p>
     <h3 style="color:rgb(11, 19, 21); text-align: center;">Eat tasty and healthy with Grandma's Recipes</h3>
 
@@ -155,7 +55,7 @@
     <hr id="about">
     <!--About section-->
     <div class="w3-container w3-padding-32 w3-center">  
-      <p><h4>About Me, The Grandma</h4><br></p>
+      <br><h4>About Me, The Grandma</h4>
       <img src="images\cute-grandmother-chef-cartoon-character-logo-vector-art-illustrator_339032-1898.jpg" alt="Me" class="w3-image" style="display:block;margin:auto" width="400" height="300">
       <div class="w3-padding-2">
         <h4><b>I am Who I Am!</b></h4>
@@ -172,6 +72,7 @@
         </ul>
         </div>
     
+
         <div class="row">
           <div class="column">
             <table> 
@@ -196,19 +97,44 @@
                 </tr>
             </table>
           </div>
+
+
+
           <div class="column">
-            <iframe src="https://giphy.com/embed/3znTw9CfHm1akHSyuD" width="338" height="480" frameBorder="0" class="giphy-embed"></iframe>
+            <img src="images\cute-grandmother-chef-cartoon-character-logo-vector-art-illustrator_339032-1884.jpg" width="300" height="250"/>
           </div>
         </div>
       <script src="scripts\Sidebar.js"></script>
 
     <div class="w3-container w3-padding-64" id="review">
-      <h2><b>Review</b></h2>
-      <h5>Please leave a review if you like the recipe.</h5>
+      <br><br><br><h2><b>Share your recipe with me</b></h2>
+      <h5>Share recipe.</h5>
       <form action="/action_page.php" target="_blank">
         <input class="w3-input w3-padding-10" type="text" placeholder="Message \ Special requirements" required name="Message">
         <button class="w3-button w3-light-grey w3-section" type="submit">Send Message</button>
       </form>
+    </div>
+
+    <div id="respond">
+
+      <h3>Leave a Comment</h3>
+    
+      <form action="post_comment.php" method="post" id="commentform">
+    
+        <label for="comment_author" class="required">Your name</label>
+        <input type="text" name="comment_author" id="comment_author" value="" tabindex="1" required="required">
+    
+        <label for="email" class="required">Your email;</label>
+        <input type="email" name="email" id="email" value="" tabindex="2" required="required">
+    
+        <label for="comment" class="required">Your message</label>
+        <textarea name="comment" id="comment" rows="10" tabindex="4"  required="required"></textarea>
+    
+        <input type="hidden" name="comment_post_ID" value="1" id="comment_post_ID" />
+        <input name="submit" type="submit" value="Submit comment" />
+    
+      </form>
+    
     </div>
 
   <!-- Footer -->
@@ -216,7 +142,6 @@
     <div class="w3-third">
       <h3>Special thanks to my community</h3>
       <p>I wouldn't have all of this if it wasn't for you! thank you for being here and supporting me.</p>
-      <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
     </div>
   
     <div class="w3-third">
